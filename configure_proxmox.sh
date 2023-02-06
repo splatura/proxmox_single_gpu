@@ -18,4 +18,8 @@ echo "blacklist radeon" >> /etc/modprobe.d/pve-blacklist.conf
 echo "blacklist amdgpu" >> /etc/modprobe.d/pve-blacklist.conf
 
 update-initramfs -u -k all
+
 md /var/lib/vz/snippets
+
+curl https://raw.githubusercontent.com/splatura/proxmox_single_gpu/main/gpu-hookscript.sh --output /var/lib/vz/snippets/gpu-hookscript.sh
+chmod +x /var/lib/vz/snippets/gpu-hookscript.sh
