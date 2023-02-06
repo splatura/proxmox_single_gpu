@@ -1,5 +1,9 @@
 #!/bin/sh
 
+echo "# PVE pve-no-subscription repository provided by proxmox.com," >> /etc/apt/sources.list
+echo "# NOT recommended for production use" >> /etc/apt/sources.list
+echo "deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription" >> /etc/apt/sources.list
+
 sed -i 's#^\(GRUB_CMDLINE_LINUX_DEFAULT="quiet\)"$#\1 amd_iommu=on iommu=pt"#' /etc/default/grub
 update_grub
 
