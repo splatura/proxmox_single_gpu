@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sed -i 's#^\(GRUB_CMDLINE_LINUX_DEFAULT="quiet\)"$#\1 amd_iommu=on iommu=pt"#' /etc/default/grub
-update_grub
+update-grub
 
 echo "options kvm ignore_msrs=1 report_ignored_msrs=0" > /etc/modprobe.d/kvm.conf
 
