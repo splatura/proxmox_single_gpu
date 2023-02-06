@@ -6,4 +6,5 @@ Focused on the AMD platform with 6800xt GPU and a 3500 GPU
 very alpha
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/splatura/proxmox_single_gpu/main/add_repo.sh)"
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/splatura/proxmox_single_gpu/main/configure_proxmox.sh)"
