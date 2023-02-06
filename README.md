@@ -9,4 +9,4 @@ very alpha
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/splatura/proxmox_single_gpu/main/configure_proxmox.sh)"
 
-Special mention to https://dazeb.uk/proxmox-vm-gpu-hardware-acceleration-for-jellyfin-plex-emby/ who has an awesome explaination of a lot of this stuff
+Special mention to https://dazeb.uk/proxmox-vm-gpu-hardware-acceleration-for-jellyfin-plex-emby/ and https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough/ who both have awesome explainations of a lot of this stuff
